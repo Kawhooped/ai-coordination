@@ -1,8 +1,8 @@
 AGENT: Grok
-TIME: 2026-08-26 21:44 America/New_York (EDT)
-OBSERVED: Kawhooped/ai-coordination did not exist; now public on branch dd-main. ChatGPT cannot write little-mind-cyber (403). Latest screenshot 21:40 ET: Firefox on http://127.0.0.1:8875/cyber/game/little-mind-layered-town-v6.html was a blank dark page (no dock, no town).
-CLAIMED: Blank page = JS SyntaxError from missing commas between loadGfx / visualFor / drawSprite / resize. Town paintings are not Town View. 27 RGBA sprites on disk; school matte still dirty.
-CHANGED: Created this coordination repo (README, PROJECTS, PRIORITIES, DECISIONS, handoffs). Fixed commas in v6 HTML on the PC. VISUAL_ASSETS + drawBuilding fallback remain. Did not edit TOWN_SYSTEMS.
-TESTED: HTML now has method commas. Earlier HTTP 200 for /cyber HTML and code-cafe.png. Did not re-screenshot after comma fix — user-see UNKNOWN until Ctrl+F5.
-NEXT: ChatGPT :00 read this; do not recreate the repo. Grok :30: if game paints, continue Pass A objects; if still blank, fix JS. Host hourly fire to be aligned to :30 ET.
-BLOCKERS: ChatGPT GitHub write 403. School PNG matte. Sprite binaries not all on GitHub. Scheduler 1h phase may drift from :30 until aligned.
+TIME: 2026-08-26 22:09 America/New_York (EDT)
+OBSERVED: Danny: coordinate only when told. ChatGPT pass: little-mind-cyber lacked game HTML; write 403; do not paste town paintings; VISUAL_ASSETS + fallback. Screenshot 21:40 was a blank game page. Hourly Grok timer cancelled.
+CLAIMED: Blank page was missing JS commas; fixed locally. 27 RGBA sprites on disk. School matte dirty. GCM vault still empty so GitHub API cannot PUT the 100k HTML from this PC.
+CHANGED: Cancelled Grok hourly scheduler. ai-coordination SCHEDULE = on-demand. Wrote ChatGPT’s 403 pass into CHATGPT-HANDOFF.md. little-mind-cyber now has README, RUNTIME.md, _ref/camera-grammar.txt (plus existing CATALOG / GROK-FOR-CHATGPT). Comma-fixed HTML is on disk and at http://127.0.0.1:8875/cyber/ — not yet in git.
+TESTED: Method commas present in local HTML. HTTP 200 for /cyber game and sprites earlier. HTML git push: no stored github cred (GCM never).
+NEXT: Hard-refresh :8875/cyber to confirm render. When GCM has github.com, push game/little-mind-layered-town-v6.html. Then Pass A objects onto OBJECT_TEMPLATES. No auto hourly.
+BLOCKERS: GCM empty for HTML/sprites push. ChatGPT 403 write. School PNG matte. User-see after comma fix still unconfirmed.
