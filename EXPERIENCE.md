@@ -14,4 +14,6 @@ Local skills: `C:\\Users\\zizox\\.grok\\skills\\experience\\`
 
 Already skills (do not duplicate): Talk OS, $7500, context-store.
 
-2026-08-27: `Kawhooped/voidd-sales` Pages portal loads `desk.js` (Today/Shops/Qualify/Call/Collect). GCM still empty — Talk writes via GitHub MCP, sequential, branch `dd-main`. Do not invent closer passwords.
+2026-08-27: `Kawhooped/voidd-sales` Pages portal loads `desk.js`. Answers pack is 123 via `qa-0.json` + `qa-1.json` + `qa-2.json` + `pack-parts.js`. GCM empty — Talk writes via GitHub MCP, sequential, branch `dd-main`. Do not invent closer passwords.
+
+Pages first enable is him (Settings → Pages → GitHub Actions). `configure-pages` `enablement: true` still 403 from Actions on a new repo (`Resource not accessible by integration`). people-internet / little-mind-cyber / ai-coordination wait on that click.
