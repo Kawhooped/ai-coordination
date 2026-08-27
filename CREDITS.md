@@ -1,32 +1,37 @@
 # Credits (do not let them rot)
 
-**Card float $138:** hold. Not for AI seats, Zilla, LLC, ads. Talk does not charge the card.
+**Card float $138:** hold. Talk does not charge the card. Not for AI seats, Docker Pro, Zilla, LLC, ads.
 
-**Paid seats:** unknown from this PC. Danny confirms what’s actually logged in. Do not buy new ones.
+**Central rule:** If a tool asks for a card or paid subscription to become useful, **stop**. If it is legitimately free/local, test it and add useful capacity. Login stays HIM.
 
-**Local (already paid in electricity):** 7B Ollama on this PC. Free of vendor credits. Drafts only; Grok checks.
+**Docker is infrastructure**, not another AI app. Check `docker` on PATH first. Install Docker Desktop only if the official flow is **free/no-card**. Gordon / `docker ai` only after Docker actually runs.
 
-## Burn order (when Danny says coordinate)
+**ChatGPT cannot write this file (403).** Grok writes it.
 
-Use leftover free/paid allowance on **Current work**, not a new mill.
+Labels: `INSTALLED` | `USEFUL` | `LIMITED` | `DUPLICATE` | `FAILED` | `BILLING-GATED` | `MISSING`
 
-| Mouth | Likely leftover | Job on Current | Do not |
-|---|---|---|---|
-| **Grok Talk (this PC)** | SuperGrok session | Writes git, local files, sprites, proto | Extra `grok -p` clones |
-| **ChatGPT** | Free/Plus/hourly inspect | Architecture, LITTLE MIND inspect, 403 write | Rewrite TOWN_SYSTEMS |
-| **Claude** | Free 5h window / Pro if he has it | Critic of v6 HTML + VISUAL_ASSETS; extraction plan | A second living-city |
-| **Gemini** | Free Flash/Pro quota in the app | Image/read CATALOG; search | New Google Cloud billing |
-| **Perplexity** | Free/Pro queries | Live web only | Design the game |
-| **Copilot** | Free 2,000 completions + 50 chats/mo if VS Code signed in | In-file edits | New paid Copilot |
-| **Kimi** | Free long context | Paste CATALOG + RUNTIME, ask for object-id map | Become mothership |
-| **Venice / others** | If the tab is already logged in | Spare inspect | New accounts, new cards |
+## First tier (no-card / local)
 
-## How to not waste a reset
+| Tool | Status | Unique capacity |
+|---|---|---|
+| Ollama 7B | INSTALLED | Local drafts, $0 vendor. GPU: do not steal during Talk |
+| VS Code | INSTALLED | Editor. Copilot/Continue/Cline/Claude/Gemini Code Assist already in extensions |
+| Claude Code CLI | INSTALLED | `claude` 2.1.229 on PATH. Login HIM |
+| Grok Talk (this PC) | INSTALLED | Git write, local proto, Imagine |
+| Grok Bot desktop | INSTALLED | Cloud computer teammates. Eligible plan HIM. Not Talk. One Bot. |
+| Codex CLI | MISSING on PATH | Winget listed OpenAI.Codex; `codex` not on PATH. App MSIX present. Login HIM |
+| Gemini CLI / `agy` | MISSING | Consumer Gemini CLI login moved to Antigravity `agy`. Do not npm-install hoping for 1000/day |
+| Kimi CLI | MISSING | Official `irm https://code.kimi.com/kimi-code/install.ps1`. Login HIM |
+| Docker Desktop | MISSING | No `docker` on PATH. Install only if no-card |
+| Gordon / docker ai | MISSING | Needs Docker running |
+| Jan | not installed | Check no-card before install |
+| AnythingLLM | not installed | Check no-card before install |
+| Open WebUI | not installed | Needs Docker; after Docker if no-card |
 
-Vendor free tiers usually **reset on a clock** (5h Claude, monthly Copilot, daily Gemini). Sitting at cap-1 until reset is the waste.
+## Second tier (investigate, do not install yet)
 
-When Danny says go: one Current (now little-mind Pass A), each mouth gets **one job from the table**, results land in this repo’s handoffs or the project repo. Grok writes git.
+Microsoft Intelligent Terminal, LM Studio, GPT4All, OpenCode, Agent Workspace, wmux, shellX, CodexFlow, TerminalApp, Dopax, Trace, Open Deskmate, Cortask — each must be `USEFUL` vs `DUPLICATE` vs `BILLING-GATED` before install.
 
-## Unknown (measure, don’t guess)
+## Burn order (when Danny says go)
 
-Remaining ChatGPT / Claude / Gemini / Grok / Copilot units tonight = **UNKNOWN** until he looks at each product’s usage page. Paste counts here when known.
+One Current. Each mouth **one job**. Grok writes git. Bot verifies public URLs. Nobody captures the path.

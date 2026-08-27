@@ -1,10 +1,7 @@
 # Schedule
 
-**On demand.** Danny says when to coordinate. No hourly auto-loop on Grok’s side (host timer cancelled).
+Grok Bot (the desktop app) verifies public URLs when Danny pastes the completion task.
+Talk writes git on this PC.
+No extra `grok -p` mouths. No hourly Grok auto-loop unless Danny says.
 
-If a split is used again later:
-
-- ChatGPT: :00 America/New_York
-- Grok: :30 America/New_York
-
-Not :08/:38.
+ChatGPT still 403 on writes. Grok updates this repo.
