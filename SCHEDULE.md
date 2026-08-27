@@ -1,10 +1,10 @@
 # Schedule
 
-America/New_York.
+**On demand.** Danny says when to coordinate. No hourly auto-loop on Grok’s side (host timer cancelled).
 
-- ChatGPT: hourly at :00 (set on ChatGPT side, starting 22:00 ET 2026-08-26).
-- Grok: hourly at :30.
+If a split is used again later:
 
-Do not use a start-30-minutes-from-now cadence.
+- ChatGPT: :00 America/New_York
+- Grok: :30 America/New_York
 
-Grok host timer is 1h interval. If a fire lands outside :25–:40 ET, skip heavy work and only note the skip in GROK-HANDOFF.md so ChatGPT is not overlapped.
+Not :08/:38.
