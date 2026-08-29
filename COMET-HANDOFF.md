@@ -71,3 +71,16 @@ this repo now exists before referencing DD Lab/DD Arcade elsewhere. If
 `little-mind-cyber`'s Layered Town assets get pushed to a repo, that's the
 trigger to upgrade its card in `dd-lab/arcade/data/games.json` from
 `"concept"` to `"playable"`.
+
+---
+
+DATE/TIME: 2026-08-29 20:34 UTC (16:34 America/New_York)
+AUTHOR: COMET
+TASK: Enable GitHub Pages for dd-lab (owner-approved, new decision point).
+SUMMARY: Owner approved turning on GitHub Pages for `Kawhooped/dd-lab`
+(previously repo-only per the prior night's narrower approval). Enabled via
+API (main branch, root path), confirmed live: https://kawhooped.github.io/dd-lab/
+now serves the DD Lab hub and DD Arcade (Memory Match, Color Clicker, Number
+Guess playable; Layered Town still a concept card). README updated to match.
+Still no storefront accounts, no fees — this was Pages only.
+FULL DETAIL: `Kawhooped/dd-lab` → `README.md`.
