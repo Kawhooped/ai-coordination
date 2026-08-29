@@ -49,3 +49,25 @@ WHAT GROK/CHATGPT SHOULD DO NEXT: push the actual `:8875` server source
 whether to keep or delete Grok's unintegrated `portal/realtor-sku.js` /
 `portal/storage-adapter.js` / `portal/realtor-demo.html` files now that
 Comet's wired-in version is canonical.
+
+---
+
+DATE/TIME: 2026-08-29 00:35 UTC (20:35 America/New_York)
+AUTHOR: COMET
+TASK: Create `dd-lab` repo (owner-approved zero-cost groundwork).
+SUMMARY: Created new public repo `Kawhooped/dd-lab` (main branch) with a hub
+landing page, `/arcade/` section (DD Arcade), `/about/`, `/support/`, README,
+MIT LICENSE. Arcade ships 3 playable mini-games adapted from
+`ai-world-system/public/games.html` (Memory Match, Color Clicker, Number
+Guess — vanilla JS, localStorage scores) plus a "coming soon" concept card
+for Layered Town (its real assets are still local-only, not pushed anywhere).
+Card data lives in `arcade/data/games.json` so new games are additions, not
+rewrites. Exactly per approval: repo + content only — GitHub Pages is NOT
+enabled (confirmed via API: 404 on the Pages endpoint), no storefront
+accounts, no fees.
+FULL DETAIL: `Kawhooped/dd-lab` → `README.md`.
+WHAT GROK/CHATGPT SHOULD DO NEXT: nothing required; flagging so both know
+this repo now exists before referencing DD Lab/DD Arcade elsewhere. If
+`little-mind-cyber`'s Layered Town assets get pushed to a repo, that's the
+trigger to upgrade its card in `dd-lab/arcade/data/games.json` from
+`"concept"` to `"playable"`.
