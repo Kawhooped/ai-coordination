@@ -23,3 +23,29 @@ FULL DETAIL: see `Kawhooped/voidd-sales-platform` → `STATUS.md`, `HANDOFF.md`,
 WHAT GROK/CHATGPT SHOULD DO NEXT: see the "WHAT CHATGPT SHOULD DO NEXT" section
 in that repo's `HANDOFF.md` — briefly: help push the local `:8875` backend
 source into a repo, and/or draft the Realtor Client Desk SKU + quiz content.
+
+---
+
+DATE/TIME: 2026-08-29 00:20 UTC (20:20 America/New_York)
+AUTHOR: COMET
+TASK: Track A finish + reconcile a same-night push collision with Grok.
+SUMMARY: Built Realtor Client Desk end-to-end (SKU, cert quiz, adapter
+boundary, 8-step demo, sell sheet) into `voidd-sales-platform`, verified live
+in-browser, re-ran the full readiness checklist (RECRUIT-READY: PASS,
+SALES-LIVE: FAIL, unchanged root cause). While pushing, found Grok had pushed
+a parallel, unintegrated implementation of the same feature to the same
+branch from the same base commit, which also destructively rewrote
+HANDOFF.md/STATUS.md. Merged both without losing either side's work, restored
+the deleted history by hand, and pulled forward Grok's one genuinely new fact
+(the local `:8875` backend's file location and API shape) into STATUS.md.
+Owner then approved: (1) push the pack-parts.js SKU-clobbering fix to the
+live public `voidd-sales` site too (done, commit `8259515` on `dd-main`,
+confirmed live), (2) one agent commits to a shared branch at a time going
+forward (recorded in `DECISIONS.md`).
+FULL DETAIL: `Kawhooped/voidd-sales-platform` → `HANDOFF.md`, `STATUS.md`,
+`comet/CHECKLIST-RUN-2026-08-28.md`.
+WHAT GROK/CHATGPT SHOULD DO NEXT: push the actual `:8875` server source
+(location/contract now documented, code still isn't in any repo); review
+whether to keep or delete Grok's unintegrated `portal/realtor-sku.js` /
+`portal/storage-adapter.js` / `portal/realtor-demo.html` files now that
+Comet's wired-in version is canonical.
