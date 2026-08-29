@@ -84,3 +84,51 @@ now serves the DD Lab hub and DD Arcade (Memory Match, Color Clicker, Number
 Guess playable; Layered Town still a concept card). README updated to match.
 Still no storefront accounts, no fees — this was Pages only.
 FULL DETAIL: `Kawhooped/dd-lab` → `README.md`.
+
+---
+
+DATE/TIME: 2026-08-29 23:20 UTC (16:20 America/New_York)
+AUTHOR: COMET (scout pass — did not touch :8875 backend, Grok's active work)
+CHECKED: dd-lab Pages (live, healthy), voidd-sales Pages (live, healthy),
+ai-world-system Pages (BROKEN — see below), GitHub App installation 91538133
+(re-diagnosed, unchanged).
+FIXED (safe, independent, no backend/Grok overlap):
+1. ai-world-system had no root index.html (site content lives in `public/`);
+   added a 1-line redirect `index.html` → `public/index.html` (commit
+   `ec2a0c3`). This alone did not fix it — see BLOCKED below.
+2. dd-lab: added `favicon.svg`, `robots.txt`, `sitemap.xml`, linked favicon
+   from all 4 pages (commit `1303df1`). Verified 200 on all three new files
+   post-deploy.
+BLOCKED (needs Danny, not an agent):
+- **ai-world-system Pages is fully offline** (`kawhooped.github.io/ai-world-system/`
+  = 404, has been since at least 2026-05-30). Root cause: its Pages
+  `build_type` is `"workflow"` (GitHub Actions), and the deploy workflow
+  (`.github/workflows/static.yml`) fails immediately with `startup_failure`
+  on every run (confirmed on the latest run, triggered by my push just now:
+  https://github.com/Kawhooped/ai-world-system/actions/runs/33280556751).
+  `startup_failure` on a Pages-deploy workflow almost always means the
+  `github-pages` deployment environment isn't provisioned or Actions lacks
+  Pages permission — both are repo-settings items only fixable in Danny's own
+  session, not via API/PAT. **Shortest fix:** open
+  https://github.com/Kawhooped/ai-world-system/settings/pages → under
+  "Build and deployment", if Source shows "GitHub Actions", switch it to
+  "Deploy from a branch" instead (branch `main`, folder `/public` won't be
+  offered — GitHub Pages branch-deploy only allows `/` or `/docs`, so also
+  move/copy `public/*` to repo root, or simplest: just re-select "GitHub
+  Actions" as Source once more to force GitHub to (re)provision the
+  `github-pages` environment, then re-run the failed workflow from the
+  Actions tab). Either path is ~2 minutes in the browser; I cannot do this
+  from an API token.
+  This matters for DD Lab because `ai-world-system/public/games.html` is the
+  origin source of DD Arcade's 3 games — Arcade itself is unaffected (dd-lab
+  has its own copy), this only affects the *original* repo's own site.
+- **GitHub App installation 91538133** — re-confirmed still 403
+  ("must authenticate with an access token authorized to a GitHub App"); my
+  PAT categorically cannot manage app installations, no new information since
+  last check. **Shortest fix:** open
+  https://github.com/settings/installations → find the app → Configure →
+  under "Repository access" tick `voidd-sales-platform` and `ai-coordination`
+  → Save. One page, no other steps.
+NOT TOUCHED (per instruction): `backend/8875/*` in voidd-sales-platform —
+confirmed Grok's commit `80261ce` (source push) is already in main; did not
+review/modify/duplicate it beyond reading file names for this log.
