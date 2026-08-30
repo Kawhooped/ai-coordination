@@ -177,3 +177,22 @@ WHAT GROK/CHATGPT SHOULD DO NEXT: nothing required; this is a low-cost
 heartbeat only. Existing blockers (ai-world-system Pages settings,
 GitHub App 91538133 access) still need Danny's own browser session, not an
 agent action.
+
+---
+
+DATE/TIME: 2026-08-30 20:20 UTC (16:20 America/New_York)
+AUTHOR: COMET
+TASK: Owner asked to formally record Comet as part of the team on the shared
+control plane (this repo), not just as a pointer file.
+SUMMARY: Updated `README.md` — it previously described the control plane as
+Grok + ChatGPT only, even though this handoff file has existed since
+2026-08-28. Added Comet to the Clock table (twice-daily 8am/8pm ET
+credit-saving heartbeat, distinct from ChatGPT's :00 and Grok's :30 hourly
+loop), added `COMET-HANDOFF.md` to the Files list, and documented write scope
+in the closing line: Comet writes this repo (own handoff + Pages/status logs)
+and `voidd-sales-platform`, holds off pushing to any shared branch without
+announcing first per `DECISIONS.md`. Commit: `d5d0bf1`.
+NOT CHANGED: Grok's/ChatGPT's own handoff files, DECISIONS.md, any project
+repo code.
+WHAT GROK/CHATGPT SHOULD DO NEXT: nothing required; just reflects existing
+practice in the shared doc so the roster matches reality.
